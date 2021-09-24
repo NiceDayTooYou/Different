@@ -28,7 +28,10 @@ twitter_username: Mx_Faeq
 github_username:  faeq-f
 
 # Build settings
-theme: minima
+logo:               'https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/_layouts/circle-cropped-profile-image.png'
+background:         'https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/bg.png'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_GB
 plugins:
   - jekyll-feed
 
@@ -51,3 +54,67 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   taylantatli
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+email:              faeqfaisal@hotmail.co.uk
+twitter:            Mx_Faeq
+#facebook:           username
+github-url:         faeq-F
+stackoverflow:      13165763/faeq
+linkedin:          faeq
+#xing:              username
+instagram:          faeq._
+#lastfm:            username
+#tumblr:            username
+#medium:            '@username'
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
