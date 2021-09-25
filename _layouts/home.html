@@ -9,35 +9,31 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: auto 100%;
+        background-position: center;
       }
 
-      #MainRectangle {
-        background-color: #FFFFFF;
-        border-radius: 15px;
-        margin: 15px 15px 15px 15px;
-        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.4), 0 0px 30px 0 rgba(0, 0, 0, 0.4);
-        height: 70%;
-        min-height: 70%;
-        width: 70%;
-        margin: auto auto;
-        display: flex;
-	      justify-content: center;
-	      align-items: center
-      }
 
-      #MainRecContent {
-        margin: auto auto;
-        height: 70%;
-        min-height: 70%;
-        text-align: center;
-      }
+.Rectangle {
+    width:80%;
+    height:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-40%;
+    margin-top:-40%;
+    z-index:60;
+    background-color: #FFFFFF;
+}
+h2{
+  text-align: center;
+  margin: auto auto;
+}
     </style>
   </head>
   <body>
-    <div id="MainRectangle">
-      <div id="MainRecContent">
-        This is the home html file showing
-      </div>
-    </div>
+    <div class="Rectangle">
+          <h2>Content</h2>
+
+        </div>
   </body>
 </html>
