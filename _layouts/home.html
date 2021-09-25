@@ -6,34 +6,59 @@
     <style>
       body {
         background-image: url('https://raw.githubusercontent.com/Faeq-F/faeq-f.github.io/main/bg.png');
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-attachment: fixed;
-        background-size: auto 100%;
+        background-size: auto 120%;
         background-position: center;
       }
-
+@media (max-width: 1000px) {
+    .center-inner{left:25%;top:25%;position:absolute;width:50%;height:300px;background:#f0f;text-align:center;max-width:500px;max-height:500px;}
+}
+@media (min-width: 1000px) {
+    .center{left:50%;top:25%;position:absolute;}
+    .center-inner{width:500px;height:100%;margin-left:-250px;height:300px;background:#f0f;text-align:center;max-width:500px;max-height:500px;}
+}
 
 .Rectangle {
-    width:80%;
-    height:80%;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-40%;
-    margin-top:-40%;
-    z-index:60;
-    background-color: #FFFFFF;
+ position: absolute;
+  left: 50%;
+  top: 50%;
+
+
+  transform: translate(-50%, -50%);
+
+
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
 }
+
+#Profile{
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 50%;
+  max-height: 50%;
+  margin: 15px
+}
+
 h2{
   text-align: center;
-  margin: auto auto;
+  margin: 15px 0 0 0;
 }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="Rectangle">
+      <img id="Profile" src="https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/_layouts/circle-cropped-profile-image.png" alt="Profile">
           <h2>Content</h2>
 
         </div>
+
+  <script>
+    $('.Rectangle').hide().fadeIn('slow');
+  </script>
   </body>
 </html>
