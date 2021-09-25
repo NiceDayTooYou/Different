@@ -11,69 +11,67 @@
         background-size: auto 120%;
         background-position: center;
       }
-@media (max-width: 1000px) {
-    .center-inner{left:25%;top:25%;position:absolute;width:50%;height:300px;background:#f0f;text-align:center;max-width:500px;max-height:500px;}
-}
-@media (min-width: 1000px) {
-    .center{left:50%;top:25%;position:absolute;}
-    .center-inner{width:500px;height:100%;margin-left:-250px;height:300px;background:#f0f;text-align:center;max-width:500px;max-height:500px;}
-}
 
-.Rectangle {
- position: absolute;
-  left: 50%;
-  top: 50%;
+      .Rectangle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
+      }
 
+      #Profile{
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 50%;
+        max-height: 50%;
+        margin: 15px
+      }
 
-  transform: translate(-50%, -50%);
+      br,
+      h2,
+      h1{
+        display: inline;
+        font-family: Segoe UI;
+        font-weight: lighter;
+        z-index: 20;
+      }
+      button{
+        border-radius: 15px;
+        box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
+        margin: 15px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid #fafafa;
+      }
+      #buttonGroup{
+        text-align: center;
+        margin: 15px;
+      }
 
-
-  width: 80%;
-  height: 80%;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-#Profile{
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 50%;
-  max-height: 50%;
-  margin: 15px
-}
-
-h1{
-  display: inline;
-  font-family: Segoe UI;
-  font-weight: lighter;
-  z-index: 20;
-}
-button{
-  border-radius: 15px;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
-  margin: 15px;
-  height: 50px;
-  width: 50px;
-  border: 1px solid #efefef;
-}
-#buttonGroup{
-text-align: center;
-}
-
-i{
-  color: #000;
-}
+      i{
+        color: #000;
+        margin-left: -12.5px;
+        margin-top: -20px;
+      }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <div class="Rectangle">
       <img id="Profile" src="https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/_layouts/circle-cropped-profile-image.png" alt="Profile">
       <h1>Hello, I'm Faeq</h1>
+      <br>
+      <h2>A self-taught software developer</h2>
       <hr>
       <div id="buttonGroup">
-      <button><a href="mailto:faeqfaisal@hotmail.co.uk" target="_blank"><i class="fa fa-fw fa-envelope-square"></i></a></button> <button><a href="http://twitter.com/Mx_Faeq" target="_blank"><i class="fa fa-fw fa-twitter-square"></i></a></button> <button><a href="http://linkedin.com/in/faeq" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a></button> <button><a href="http://instagram.com/faeq._" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></button> <button><a href="http://github.com/faeq-f" target="_blank"><i class="fa fa-fw fa-github"></i></a></button> <button><a href="https://stackoverflow.com/users/13165763/faeq" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i></a></button>
+      <button class="w3-xxxlarge"><a href="mailto:faeqfaisal@hotmail.co.uk" target="_blank"><i class="fa fa-fw fa-envelope-square"></i></a></button> <button class="w3-xxxlarge"><a href="http://twitter.com/Mx_Faeq" target="_blank"><i class="fa fa-fw fa-twitter-square"></i></a></button> <button class="w3-xxxlarge"><a href="http://linkedin.com/in/faeq" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a></button> <button class="w3-xxxlarge"><a href="http://instagram.com/faeq._" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></button> <button class="w3-xxxlarge"><a href="http://github.com/faeq-f" target="_blank"><i class="fa fa-fw fa-github"></i></a></button> <button class="w3-xxxlarge"><a href="https://stackoverflow.com/users/13165763/faeq" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i></a></button>
       </div>
       <hr>
 
