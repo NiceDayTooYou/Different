@@ -57,7 +57,7 @@ plugins:
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
-highlighter:        rouge
+highlighter:        #FFFFFFFF
 kramdown:
   auto_ids:         true
   footnote_nr:      1
