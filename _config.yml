@@ -18,19 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Hello, I'm Faeq
+title: Faeq - Software Engineer
 email: faeqfaisal@hotmail.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   A self-taught software developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://faeq-f.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Mx_Faeq
+#twitter_username: 
 github_username:  faeq-f
 
 # Build settings
 logo:               'https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/_layouts/circle-cropped-profile-image.png'
-background:         'https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/bg.png'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+#background:         'https://raw.githubusercontent.com/Faeq-F/Faeq-F/gh-pages/bg.png'
+#tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_GB
 plugins:
   - jekyll-feed
@@ -70,7 +70,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
