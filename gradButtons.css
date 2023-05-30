@@ -1,6 +1,6 @@
 
 .button-64 {
-    margin-top: 10px;
+    
     align-items: center;
     background-image: linear-gradient(144deg,#7e8af4, #bb7fff);
     border: 0;
@@ -14,7 +14,7 @@
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
-    min-width: 140px;
+    min-width: 50px;
     padding: 3px;
     text-decoration: none;
     user-select: none;
@@ -48,7 +48,6 @@
 @media (max-width: 661px) {
     .button-64 {
         font-size: 13px;
-        min-width: 90px;
         font-weight: bold;
     }
 }

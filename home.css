@@ -8,15 +8,17 @@
 }
 #title {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 5%;
     float: left;
     z-index: 1;
     color: #2c2c2cd5;
     font-size: 45px;
+    font-family: sans-serif;
+    line-height: normal;
 }
 .gradient {
-    top: 30%;
+    top: 25%;
     position: absolute;
     left: 50%;
     z-index: 3;
@@ -26,7 +28,7 @@
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(#37eba9, #5b37eb);
+    background-image: linear-gradient(#77e6d8, #a97ef4);
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
@@ -59,26 +61,4 @@
     border-radius: 15px;
     float: right;
 
-}
-
-/*--*/
-
-
-
-/*--*/
-
-#MeContainer{
-    margin-top: 80px;
-}
-
-.intro{
-    display: inline;
-}
-
-/*--*/
-
-
-
-.social{
-    display: inline-block;
 }
