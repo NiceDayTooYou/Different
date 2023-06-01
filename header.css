@@ -1,6 +1,10 @@
 /* Links & text */
-.headerLink{
-  
+.headerLink {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .headerLink a {
@@ -12,43 +16,61 @@
   text-decoration: none;
 }
 
-.headerText{
-    vertical-align: middle;
-    line-height: 70px;
-    color: #2c2c2cd5;
-    font-size: larger;
-    font-weight: bold;
+.headerText {
+  vertical-align: middle;
+  line-height: 70px;
+  color: #2c2c2cd5;
+  font-size: larger;
+  font-weight: bold;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.right-li{
-    float: right !important;
+
+.right-li {
+  float: right !important;
 }
-nav{
+
+nav {
   padding: 10px 0;
 }
+
 .navbar {
-    list-style: none;
-    height: 70px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:flex-start;
+  list-style: none;
+  height: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
 }
-.connectButton{
+
+.connectButton {
   margin-left: auto;
   font-size: larger;
   margin-top: 8px;
   margin-bottom: 5px;
 }
 
-.navbar{
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+.MobileConnect {
+  display: none;
+}
+
+.navbar {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
 }
 
 /* Header box */
 
 header {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: calc(100% - 81px);
   left: 0;
   color: #000;
@@ -61,32 +83,55 @@ header {
   transition: 300ms ease;
 }
 
+.header {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 header.sticky {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: 10px 2.5%;
-  width:95%;
+  width: 95%;
   background-color: #f2f4f8;
 }
 
 @media (max-width: 661px) {
-  .headerText{
+  .headerText {
     line-height: 20px;
     font-size: small;
     /*Center font*/
   }
+
   .headerLink a {
     line-height: 20px;
     padding: 0 5px;
   }
-  .connectButton{
-    
+
+  .connectButton {
+    display: none;
+  }
+
+  .MobileConnect {
+    display: block;
+    padding-left: 40px;
+
+  }
+
+  .navbar {
+    display: block;
+    height: auto;
   }
 }
+
 @media (min-width: 660px) {
-  .headerText{
+  .headerText {
     line-height: 70px;
     font-size: larger;
   }
+
   .headerLink a {
     line-height: 30px;
     padding: 0 24px;
