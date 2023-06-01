@@ -1,81 +1,170 @@
 html {
-    scroll-behavior: smooth;
-    font-family: sans-serif;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 /* This is just to transition when you change the viewport size. */
 * {
-    transition: all 0.25s ease-out;
-    font-family: sans-serif;
+  transition: all 0.25s ease-out;
+  font-family: sans-serif;
+}
+
+
+.hideme {
+  opacity: 0;
+  transform: translateY(-20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.showme {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.hidemee {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
-  
+
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  
+
   box-shadow: inset 0 0 10px 10px transparent;
   border: solid 3px transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  
+
   border-radius: 360px;
   box-shadow: inset 0 0 10px 10px #a97ef4;
   border: solid 2px transparent;
 }
 
 
-#PageContent{
+#PageContent {
   margin-top: 100vh;
 }
 
 
 
 body {
-    background: #f2f4f8;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
+  background: #f2f4f8;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
-/*--*/
+
 .card {
-    background: #f2f4f8;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    transition: 0.7s;
-    border-radius: 15px;
-    padding: 2px 16px;
+  height: 50vh;
+  width: 70%;
+  max-width: 95%;
+  margin: 0 auto 300px auto;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.45;
+  font-size: 16px;
+  color: #2c2c2cd5;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+aside {
+  height: 100vh;
+  width: 50vw;
+  margin-left: -0.5em;
+  position: sticky;
+  z-index: 0.5;
+  top: 12em;
+  left: 0;
+  background-color: transparent;
+  overflow: hidden;
 }
 
 
 
+.current-menu-item {
+  background-color: white;
+  font-weight: bold;
+}
+
+
+/* main content styling */
+
+.content {
+  margin-left: 50vw;
+  font-size: 28px;
+  padding: 0em 0.5em;
+  overflow: hidden
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
 
 
 
+/* Cursor */
 
+#custom-cursor {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 500ms;
+}
 
+#custom-cursor::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  border: 1px solid white;
+  width: 16px;
+  height: 16px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#custom-cursor.zoom {
+  transform: scale(3);
+}
