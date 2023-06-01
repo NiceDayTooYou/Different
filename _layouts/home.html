@@ -14,11 +14,16 @@
   <meta name="description" content="Faeq's Personal Website">
   <link rel="icon" type="image/x-icon" href="https://faeq-f.github.io/circle-cropped-profile-image.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://faeq-f.github.io/header.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow+Condensed:400,400i,700,700i"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://faeq-f.github.io/Main.css">
+  <link rel="stylesheet" href="https://faeq-f.github.io/Connect.css">
+  <link rel="stylesheet" href="https://faeq-f.github.io/header.css">
   <link rel="stylesheet" href="https://faeq-f.github.io/home.css">
   <link rel="stylesheet" href="https://faeq-f.github.io/gradButtons.css">
   <link rel="stylesheet" href="https://faeq-f.github.io/timeline.css">
+  <link rel="stylesheet" href="https://faeq-f.github.io/quotes.css">
+
 </head>
 
 <body>
@@ -31,11 +36,11 @@
       Please <a href="#">upgrade your browser</a> to improve your experience.
     </p>
   <![endif]-->
-  <header id="header">
+  <header id="header" class="hidemee">
     <nav>
       <ul class="navbar">
         <li class="headerLink"><a href="#top">
-            <span class="headerText">Faeq</span>
+            <span class="headerText">Home</span>
           </a></li>
         <li class="headerLink"><a href="#About">
             <span class="headerText">About</span>
@@ -47,15 +52,18 @@
             <span class="headerText">Experience</span>
           </a></li>
         <li class="right-li headerLink connectButton">
-          <a href="">
+          <a href="#bottom">
             <button class="button-64" role="button"><span class="text">Let's connect</span></button>
           </a>
         </li>
       </ul>
+      <a href="#bottom" class="MobileConnect">
+        <button class="button-64" role="button"><span class="text">Let's connect</span></button>
+      </a>
     </nav>
   </header>
   <div id="PageContent">
-    <div id="HomeView">
+    <div id="HomeView" class="hidemee">
       <p id="title">
         <strong>Hello, I'm Faeq<br>A software engineer<br></strong>
         <span style="display: inline-block;">
@@ -70,16 +78,90 @@
         <p id="code"></p>
       </div>
     </div>
+
+
     <div id="About">
+      <section>
+        <aside class="hidemee">
+          <div class="ag-timeline_title-box">
+            <div class="ag-timeline_tagline">What I do</div>
+            <div class="ag-timeline_title">About me</div>
+          </div>
+          <div class="card" style="height: fit-content;">
+            <p>
+              I work with many different technologies, including Java, Python, Ecmascript (Javascript), Typescript, C,
+              etc.
+              <br>
+            </p>
+            <a href="" style="color:transparent">
+              <img align="center"
+                src="https://github-readme-stats-xi-five-41.vercel.app/api?username=Faeq-F&hide=issues&show_icons=true&theme=buefy&bg_color=00000000&hide_border=true&text_color=a97ef4&title_color=a97ef4&icon_color=a97ef4&rank_icon=github" />
+            </a>
+            <a href="">
+              <img align="center"
+                src="https://github-readme-stats-xi-five-41.vercel.app/api/top-langs?username=Faeq-F&layout=compact&theme=buefy&bg_color=00000000&hide_border=true&text_color=a97ef4&title_color=a97ef4&icon_color=a97ef4" />
+            </a>
+          </div>
+        </aside>
+
+        <div class="content">
+
+          <a class="anchor" id="target1"></a>
+          <h2>Title 1</h2>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+
+          <a class="anchor" id="target2"></a>
+          <h2>Title 1</h2>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+
+          <a class="anchor" id="target3"></a>
+          <h2>Title 1</h2>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+          <h4>Subheading</h4>
+          <p>Text</p>
+
+          <h2 style="color: transparent">Title 1</h2>
+          <h4 style="color: transparent">Subheading</h4>
+          <p style="color: transparent">Text</p>
+          <h4 style="color: transparent">Subheading</h4>
+          <p style="color: transparent">Text</p>
+          <h4 style="color: transparent">Subheading</h4>
+          <p style="color: transparent">Text</p>
+
+        </div>
+
+      </section>
+
 
     </div>
-    <div id="Portfolio">
-
+    <div id="Portfolio" class="hideme">
+      <div class="ag-timeline_title-box">
+        <div class="ag-timeline_tagline">What I've done</div>
+        <div class="ag-timeline_title">Portfolio</div>
+      </div>
+      <div class="card">
+        <p>
+          Below you can view the certifications I have earned.
+        </p>
+      </div>
     </div>
     <div id="Timeline">
       <div class="ag-timeline-block">
-        <div class="ag-timeline_title-box">
-          <div class="ag-timeline_tagline">From the beginning to now</div>
+        <div class="ag-timeline_title-box hideme">
+          <div class="ag-timeline_tagline">Have something here</div>
           <div class="ag-timeline_title">My Experience</div>
         </div>
         <section class="ag-section">
@@ -102,19 +184,21 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" />
                       </div>
                       <div class="ag-timeline-card_info">
+                        <div class="mobileAge">(6 Years old)</div>
                         <div class="ag-timeline-card_title">XP & Wii mods</div>
                         <div class="ag-timeline-card_desc">
                           At this stage in my life, I had just been introduced to digital games. From the puzzle widget
                           on Windows XP to 3D Brawlers on the Nintendo Wii, I wanted to play them all. With the help of
-                          my father and online guides, I modified my wii console to accept sd-cards formatted with the
-                          WBFS-manager, so that I could play any game ROM I wished, without needing the physical disc.
+                          my father and online guides, I modified my Wii console to accept sd-cards formatted with the
+                          WBFS-manager, so that I could play any game ROM I wished.
                           <br><br>
-                          It was also at this stage I got heavily invested in technology and it's capabilities. I loved
-                          heavily customising my devices, including the Windows XP family pc with the tweak UI powertoy.
+                          It was also at this stage I got heavily invested in technology and it's capabilities. I became
+                          a power user and loved to heavily customize my devices, including the Windows XP family PC,
+                          with tools like the tweak UI PowerToy.
                         </div>
                       </div>
                     </div>
@@ -125,29 +209,41 @@
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Season 12</div>
+                      <div class="ag-timeline-card_meta">9 Years old</div>
                     </div>
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2020</div>
+                      <div class="ag-timeline-card_point">2013</div>
                     </div>
                   </div>
                   <div class="ag-timeline-card_item">
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 12</div>
+                        <div class="mobileAge">(9 Years old)</div>
+                        <div class="ag-timeline-card_title">Scratch & Python</div>
                         <div class="ag-timeline-card_desc">
-                          Donec pede justo, fringilla
-                          vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                          tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                          tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                          Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
-                          nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                          During primary school, I was introduced to programming. I started off with block-based
+                          programming on Scratch 2.0, exploring my creativity and creating many fun programs, including
+                          games like Pac-Man. I then moved onto text-based programming with Python, joining a community
+                          like no other, learning from those more experienced and <a
+                            href="https://stackoverflow.com/users/13165763/faeq"
+                            style="text-decoration: none; color: #c2a8f0">doing my
+                            part</a>.
+                          <div class="blockquote-wrapper">
+                            <div class="blockquote">
+                              <p class="h1">
+                                Learning to write programs <span style="color:#a97ef4b9">stretches your mind</span> and
+                                helps you <span style="color:#a97ef4b9">think better</span>, creates a way of thinking
+                                about things that I think is <span style="color:#a97ef4b9">helpful in all
+                                  domains.</span>
+                              </p>
+                              <p class="h4">&mdash; Bill Gates<br><em>(Chairman, Microsoft)</em></p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -158,21 +254,22 @@
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2020</div>
+                      <div class="ag-timeline-card_point">2016</div>
                     </div>
                     <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Season 11</div>
+                      <div class="ag-timeline-card_meta">12 Years old</div>
                     </div>
                   </div>
                   <div class="ag-timeline-card_item">
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-11.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 11</div>
+                        <div class="mobileAge">(12 Years old)</div>
+                        <div class="ag-timeline-card_title">Web technologies</div>
                         <div class="ag-timeline-card_desc">
                           Aenean imperdiet. Etiam ultricies
                           nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
@@ -191,21 +288,22 @@
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Season 10</div>
+                      <div class="ag-timeline-card_meta">14 Years old</div>
                     </div>
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2019</div>
+                      <div class="ag-timeline-card_point">2018</div>
                     </div>
                   </div>
                   <div class="ag-timeline-card_item">
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-10.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 10</div>
+                        <div class="mobileAge">(14 Years old)</div>
+                        <div class="ag-timeline-card_title">GCSEs</div>
                         <div class="ag-timeline-card_desc">
                           Cum sociis natoque penatibus et magnis dis parturient
                           montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
@@ -223,21 +321,22 @@
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2019</div>
+                      <div class="ag-timeline-card_point">2020</div>
                     </div>
                     <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Season 9</div>
+                      <div class="ag-timeline-card_meta">16 Years old</div>
                     </div>
                   </div>
                   <div class="ag-timeline-card_item">
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-9.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 9</div>
+                        <div class="mobileAge">(16 Years old)</div>
+                        <div class="ag-timeline-card_title">A-levels</div>
                         <div class="ag-timeline-card_desc">
                           Vivamus elementum semper nisi. Aenean vulputate eleifend
                           tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
@@ -254,27 +353,26 @@
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Season 8</div>
+                      <div class="ag-timeline-card_meta">18 Years old</div>
                     </div>
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2018</div>
+                      <div class="ag-timeline-card_point">2022</div>
                     </div>
                   </div>
                   <div class="ag-timeline-card_item">
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-8.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Season 8</div>
+                        <div class="mobileAge">(18 Years old)</div>
+                        <div class="ag-timeline-card_title">Software engineering</div>
                         <div class="ag-timeline-card_desc">
-                          Donec quam felis, ultricies nec, pellentesque eu,
-                          pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                          vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                          tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                          I decided to take a software engineering course at the royal holloway, university of london.
+                          This course includes a year in industry. I am currently still taking this course; it lasts for
+                          4 years.
                         </div>
                       </div>
                     </div>
@@ -282,6 +380,18 @@
                   </div>
                 </div>
 
+                <div class="js-timeline_item ag-timeline_item">
+                  <div class="ag-timeline-card_box">
+                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                      <div class="ag-timeline-card_point">now</div>
+                      <div class="mobileAge hideme" style="margin-top: 10px;">(19 Years old)</div>
+                    </div>
+                    <div class="ag-timeline-card_meta-box">
+                      <div class="ag-timeline-card_meta">19 Years old</div>
+                    </div>
+                  </div>
+                </div>
+                <!--
                 <div class="js-timeline_item ag-timeline_item">
                   <div class="ag-timeline-card_box">
                     <div class="js-timeline-card_point-box ag-timeline-card_point-box">
@@ -295,7 +405,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-7.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -326,7 +436,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-6.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -356,7 +466,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-5.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -390,7 +500,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-4.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -421,7 +531,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-3.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" alt="" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -453,7 +563,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-2.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -484,7 +594,7 @@
                     <div class="ag-timeline-card_inner">
                       <div class="ag-timeline-card_img-box">
                         <img
-                          src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-1.png"
+                          src="https://s1.qwant.com/thumbr/0x0/b/8/a3925d3c8d285ce2943e8e004ab869e2ca2ad00b2417646b4c21ee39898638/233-2332677_image-500580-placeholder-transparent.png?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Ffull%2F233-2332677_image-500580-placeholder-transparent.png&q=0&b=1&p=0&a=0"
                           class="ag-timeline-card_img" width="640" height="360" />
                       </div>
                       <div class="ag-timeline-card_info">
@@ -502,14 +612,66 @@
                     <div class="ag-timeline-card_arrow"></div>
                   </div>
                 </div>
+                -->
               </div>
             </div>
           </div>
         </section>
       </div>
     </div>
-    <script src="https://faeq-f.github.io/header.js"></script>
-    <script src="https://faeq-f.github.io/timeline.js"></script>
+    <br><br><br><br>
+    <footer id="Contact" class="hideme">
+      <div class="ContactCard">
+        <div class="ag-timeline_title-box">
+          <div class="ag-timeline_tagline" style="color: #f2f4f8; margin-top: 30px;">Contact me</div>
+          <div class="ag-timeline_title"
+            style="font-size: 20vh; background-image: none; color: #f2f4f8; font-weight: bolder; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Let's Connect
+          </div>
+        </div>
+        <div class="SocialButtons">
+          <div class="SButtons">
+            <button class="card1">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
+                width="30px" height="30px" fill-rule="nonzero" class="instagram">
+                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button class="boxSocial"></button>
+            <button class="boxSocial"></button>
+            <button class="boxSocial"></button>
+            <button class="card2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" class="github">
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                </path>
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </footer>
+  <div id="bottom">
+    <p style="color: transparent;">This is here to have a link to the bottom</p>
+  </div>
+  <div id="custom-cursor">
+  </div>
+
+  <script src="https://faeq-f.github.io/header.js"></script>
+  <script src="https://faeq-f.github.io/timeline.js"></script>
+  <script src="https://faeq-f.github.io/ScrollFade.js"></script>
+  <script src="https://faeq-f.github.io/cursor.js"></script>
 </body>
 
 </html>
