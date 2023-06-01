@@ -58,7 +58,26 @@
       agTimelineItem.each(function () {
         var agTop = $(this).find(agTimelinePoint).offset().top;
 
-        (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+        if ((agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight) {
+          
+          if ($(this).children().first().children().first().children().first().hasClass("ag-timeline-card_meta")) {
+            $(this).children().first().children().first().children().first().parent().next().children().first().css("border", "3px solid #a97ef4")
+            $(this).children().first().children().first().children().first().css("color", "#a97ef4")
+          } else {
+            $(this).children().first().children().first().children().first().css("border", "3px solid #a97ef4")
+            $(this).children().first().children().first().children().first().parent().next().css("color", "#a97ef4")
+          }
+          $(this).addClass('js-ag-active')
+        } else {
+          if ($(this).children().first().children().first().children().first().hasClass("ag-timeline-card_meta")) {
+            $(this).children().first().children().first().children().first().css("color", "transparent")
+            $(this).children().first().children().first().children().first().parent().next().children().first().css("border", "transparent")
+          } else {
+            $(this).children().first().children().first().children().first().css("border", "transparent")
+            $(this).children().first().children().first().children().first().parent().next().css("color", "transparent")
+          }
+          $(this).removeClass('js-ag-active');
+        }
       })
     }
 
