@@ -1,3 +1,8 @@
+#Timeline {
+  width: 100vw;
+  margin-bottom: 10vh;
+}
+
 img {
   max-width: 100%;
 }

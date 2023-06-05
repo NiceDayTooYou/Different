@@ -54,9 +54,6 @@ nav {
   margin-bottom: 5px;
 }
 
-.MobileConnect {
-  display: none;
-}
 
 .navbar {
   padding-inline-start: 40px;
@@ -81,6 +78,7 @@ header {
   background-color: transparent;
   border-radius: 30px;
   transition: 300ms ease;
+  height: 10vh;
 }
 
 .header {
@@ -98,6 +96,17 @@ header.sticky {
   background-color: #f2f4f8;
 }
 
+@media(max-width: 760px) {
+  .connectButton {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    height: auto;
+  }
+}
+
 @media (max-width: 661px) {
   .headerText {
     line-height: 20px;
@@ -110,20 +119,6 @@ header.sticky {
     padding: 0 5px;
   }
 
-  .connectButton {
-    display: none;
-  }
-
-  .MobileConnect {
-    display: block;
-    padding-left: 40px;
-
-  }
-
-  .navbar {
-    display: block;
-    height: auto;
-  }
 }
 
 @media (min-width: 660px) {
