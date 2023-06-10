@@ -100,7 +100,34 @@ body {
   transition: transform .5s, opacity .5s;
 }
 
+a[href] {
+  color: #a97ef4;
+  text-decoration: none;
+}
 
+/* unvisited link */
+a[href]:link {
+  color: #a97ef4;
+  text-decoration: none;
+}
+
+/* visited link */
+a[href]:visited {
+  color: #a97ef4;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a[href]:hover {
+  color: #ba99f3d0;
+  text-decoration: none;
+}
+
+/* selected link */
+a[href]:active {
+  color: #a97ef4;
+  text-decoration: none;
+}
 
 
 /* Cursor */
