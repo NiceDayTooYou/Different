@@ -1,0 +1,120 @@
+footer {
+  margin: 0 auto;
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.ContactCard {
+  height: 60vh;
+  min-width: 80%;
+  max-width: 90%;
+  width: 80%;
+  margin: 20vh auto 0 auto;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.45;
+  font-size: 16px;
+  color: #2c2c2cd5;
+  background: white url("../Resources/ConnectBG.gif") center;
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
+}
+
+.SocialButtons {
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.SButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.boxSocial {
+  width: calc(70vw/5);
+  height: calc(70vw/5 - 30px);
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.card1 {
+  width: calc(70vw/5);
+  height: calc(70vw/5 - 30px);
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: calc(70vw/5);
+  height: calc(70vw/5 - 30px);
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+
+.github {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+
+}
+
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card2:hover .github {
+  fill: white;
+}
