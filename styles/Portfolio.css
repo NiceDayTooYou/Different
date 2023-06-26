@@ -83,3 +83,11 @@ iframe.noScrolling {
   text-align: center;
   line-height: 1.45;
 }
+
+.nGY2ViewerAreaPrevious.ngy2viewerToolAction {
+  display: none;
+}
+
+.nGY2ViewerAreaNext.ngy2viewerToolAction {
+  display: none;
+}

@@ -1,3 +1,20 @@
+function addEvent(obj, evType, fn) {
+  if (obj.addEventListener) {
+    obj.addEventListener(evType, fn, false);
+    return true;
+  } else if (obj.attachEvent) {
+    var r = obj.attachEvent("on" + evType, fn);
+    return r;
+  } else {
+
+  }
+}
+
+addEvent($('*[data-ngy2action="close"]'), "click", function () {
+  alert("Somehow attached handler!? (not expected)");
+});
+
+
 
 jQuery(document).ready(function () {
 
@@ -10,12 +27,31 @@ jQuery(document).ready(function () {
     galleryFilterTags: true,
     galleryFilterTagsMode: 'multiple',
     thumbnailAlignment: 'fillWidth',
+    imageTransition: 'slideAppear',
+    viewerGallery: 'bottomOverMedia',
+    viewerTheme: 'light',
+    colorSchemeViewer: 'light',
+
+    // GALLERY AND THUMBNAIL LAYOUT
     galleryDisplayMode: 'fullContent',
     gallerySorting: 'random',
-    thumbnailGutterWidth: 10,
-    thumbnailGutterHeight: 10,
-    thumbnailBorderHorizontal: 2,
-    thumbnailBorderVertical: 2,
+    thumbnailHeight: 'auto', thumbnailWidth: '300',
+    thumbnailBaseGridHeight: 50,
+    thumbnailAlignment: 'fillWidth',
+    thumbnailL1GutterWidth: 4,
+    thumbnailL1GutterHeight: 4,
+    thumbnailBorderHorizontal: 5,
+    thumbnailBorderVertical: 5,
+
+    viewerToolbar: {
+      display: true,
+      standard: 'previousButton, label, nextButton',
+      minimized: 'previousButton, label, nextButton'
+    },
+    viewerTools: {
+      topLeft: 'fullscreenButton, zoomButton, rotateLeft, rotateRight',
+      topRight: 'closeButton'
+    },
 
 
 
@@ -31,13 +67,10 @@ jQuery(document).ready(function () {
 
     // GALLERY THEME
     galleryTheme: {
-      thumbnail: { titleShadow: 'none', titleColor: '#fff', borderColor: '#fff' },
+      thumbnail: { titleShadow: 'none', titleColor: '#fff', borderColor: '#fff', borderRadius: '15px' },
       navigationBreadcrumb: { background: '#ffffff' },
       navigationFilter: { background: '#ffffff', backgroundSelected: '#a97ef4', color: '#fff' }
     },
-
-    // DEEP LINKING
-    locationHash: false,
 
     // ### gallery content ### 
     items: [
