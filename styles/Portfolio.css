@@ -5,10 +5,10 @@
 
 aside {
   height: 90vh;
-  width: 50vw;
+  width: 60vw;
   margin-left: -0.5em;
   position: sticky;
-  z-index: 0.5;
+  z-index: 9;
   top: 12em;
   left: 0;
   background-color: transparent;
@@ -29,31 +29,9 @@ aside {
   margin-left: 50vw;
   font-size: 28px;
   padding: 0em 0.5em;
-  overflow: hidden
+  overflow: scroll
 }
 
-a.anchor {
-  display: block;
-  position: relative;
-  top: -75px;
-  visibility: hidden;
-}
-
-iframe.noScrolling {
-  overflow: hidden;
-  border-radius: 15px;
-  margin-top: 15px;
-
-}
-
-#PortfolioContent {
-  height: 100vh;
-  width: 100%;
-}
-
-#BackToPortfolioProjects {
-  margin: 0 auto;
-}
 
 @media (max-width: 661px) {
   aside {
@@ -83,6 +61,8 @@ iframe.noScrolling {
   text-align: center;
   line-height: 1.45;
 }
+
+/*Arrows on the side of the lightbox (Arrows have been added to the status bar of the lightbox)*/
 
 .nGY2ViewerAreaPrevious.ngy2viewerToolAction {
   display: none;

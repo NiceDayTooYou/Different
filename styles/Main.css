@@ -10,10 +10,16 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   font-family: sans-serif;
+}
+
+/*Fix for mobile view width*/
+@media (max-width: 661px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
 }
 
 /* This is just to transition when you change the viewport size. */
@@ -38,7 +44,7 @@ body {
 }
 
 .hidemee {
-  animation: fadeIn 3s;
+  animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
@@ -73,7 +79,20 @@ body {
   border: solid 2px transparent;
 }
 
+/*Style for mobile view*/
+@media (max-width: 661px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
+  ::-webkit-scrollbar-track {
+    width: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+}
 
 
 
