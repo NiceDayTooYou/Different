@@ -2,8 +2,18 @@ html {
   scroll-behavior: smooth;
   font-family: sans-serif;
   overflow-x: hidden;
-
   overflow-y: scroll;
+}
+
+body {
+  background: #f2f4f8;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 /* This is just to transition when you change the viewport size. */
@@ -65,15 +75,6 @@ html {
 
 
 
-
-
-body {
-  background: #f2f4f8;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
 
 
 .card {
