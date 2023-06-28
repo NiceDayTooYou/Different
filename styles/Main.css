@@ -1,28 +1,19 @@
 html {
   scroll-behavior: smooth;
   font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
+/*Concerning overflow-x: hidden, it is minimal and does not cause issues at the moment*/
 body {
   background: #f2f4f8;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-/*Fix for mobile view width*/
-@media (max-width: 661px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-}
-
-/* This is just to transition when you change the viewport size. */
 * {
   transition: all 0.25s ease-out;
   font-family: sans-serif;

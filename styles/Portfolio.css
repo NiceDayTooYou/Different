@@ -12,10 +12,7 @@ aside {
   top: 12em;
   left: 0;
   background-color: transparent;
-  overflow: hidden;
 }
-
-
 
 .current-menu-item {
   background-color: white;
@@ -26,10 +23,10 @@ aside {
 /* scroll content styling */
 
 .content {
+  position: relative;
   margin-left: 50vw;
   font-size: 28px;
   padding: 0em 0.5em;
-  overflow: scroll
 }
 
 
