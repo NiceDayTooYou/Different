@@ -76,3 +76,16 @@ aside {
 .nGY2ViewerAreaNext.ngy2viewerToolAction {
   display: none;
 }
+
+.nGEvent div i {
+  color: black;
+  text-shadow: 0 0 transparent !important;
+}
+
+.toolbar.nGEvent.toolbarBackground {
+  background: #00000000 !important;
+}
+
+.title.nGEvent {
+  color: black !important;
+}
