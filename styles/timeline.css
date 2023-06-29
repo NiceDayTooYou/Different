@@ -140,7 +140,7 @@ img {
 
 .ag-timeline-card_item {
   display: inline-block;
-  width: 45%;
+  width: 35%;
   margin: -77px 0 0;
   background-color: #ffffff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -167,6 +167,7 @@ img {
   -ms-transform: translateX(-200%);
   -o-transform: translateX(-200%);
   transform: translateX(-200%);*/
+  margin-left: 10%;
 }
 
 .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
@@ -176,6 +177,7 @@ img {
   -ms-transform: translateX(200%);
   -o-transform: translateX(200%);
   transform: translateX(200%);*/
+  margin-right: 10%;
 }
 
 .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
@@ -291,11 +293,15 @@ img {
 
   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
   .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+    /*
     -webkit-transform: translateX(200%);
     -moz-transform: translateX(200%);
     -ms-transform: translateX(200%);
     -o-transform: translateX(200%);
-    transform: translateX(200%);
+    transform: translateX(200%);*/
+    margin-left: 20%;
+    margin-right: 0;
+    width: 80%;
   }
 
   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {

@@ -48,7 +48,9 @@ aside {
     margin-left: 0;
     font-size: 28px;
     padding: 0em 0em;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: -70%;
   }
 }
 

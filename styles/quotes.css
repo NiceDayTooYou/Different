@@ -1,7 +1,6 @@
 /* center the blockquote in the page */
 .blockquote-wrapper {
   display: flex;
-  width: 50%;
 }
 
 /* Blockquote main style */
