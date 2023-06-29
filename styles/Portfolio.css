@@ -30,16 +30,21 @@ aside {
   margin-top: -50%;
 }
 
+/*
+@media (max-height: 720px) {
+  aside {
+    margin-top: 120vh;
+  }
+}
+*/
+
 
 @media (max-width: 661px) {
   aside {
     height: 90vh;
     width: 100vw;
     margin-left: 0;
-    position: inherit;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: transparent;
     overflow: hidden;
   }
@@ -49,7 +54,7 @@ aside {
     font-size: 28px;
     padding: 0em 0em;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 30%;
     margin-bottom: -70%;
   }
 }
