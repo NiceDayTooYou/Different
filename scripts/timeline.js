@@ -89,3 +89,8 @@
 
 //   });
 // })(jQuery);
+
+$('.timeline').timeline({
+  verticalStartPosition: 'right',
+  verticalTrigger: '150px'
+});
