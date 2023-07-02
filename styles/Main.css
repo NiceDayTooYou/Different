@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="font-size: 30px; height:100px;"><text y="15">🧤</text></svg>'), auto;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" Style="font-size:90px;height:90px;"><text y="25">◯</text></svg>'), auto;
 }
 
 * {
