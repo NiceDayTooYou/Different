@@ -23,25 +23,19 @@ jQuery(document).ready(function () {
     // ### gallery settings ### 
 
 
-    itemsBaseURL: '../Resources/',
+    itemsBaseURL: '../Resources/PortfolioCertifications/',
     galleryFilterTags: true,
     galleryFilterTagsMode: 'multiple',
-    thumbnailAlignment: 'fillWidth',
     imageTransition: 'slideAppear',
     viewerGallery: 'bottomOverMedia',
     viewerTheme: 'light',
     colorSchemeViewer: 'light',
 
     // GALLERY AND THUMBNAIL LAYOUT
-    galleryDisplayMode: 'fullContent',
-    gallerySorting: 'random',
-    thumbnailHeight: 'auto', thumbnailWidth: '300',
-    thumbnailBaseGridHeight: 50,
-    thumbnailAlignment: 'fillWidth',
-    thumbnailL1GutterWidth: 4,
-    thumbnailL1GutterHeight: 4,
-    thumbnailBorderHorizontal: 5,
-    thumbnailBorderVertical: 5,
+    galleryDisplayMode: 'pagination',
+    gallerySorting: 'titleDesc',
+    thumbnailWidth: 'auto XS80 SM120',
+    thumbnailHeight: '200 XS80 SM120',
 
     viewerToolbar: {
       display: true,
@@ -56,12 +50,12 @@ jQuery(document).ready(function () {
 
 
     // THUMBNAIL TOOLS & LABEL
-    thumbnailLabel: { display: true, position: 'onBottomOverImage', hideIcons: true, titleFontSize: '1em', align: 'center', titleMultiLine: true, displayDescription: false },
+    thumbnailLabel: { display: true, position: 'onBottomOverImage', hideIcons: true, titleFontSize: '0.7em', align: 'center', titleMultiLine: true, displayDescription: false },
     thumbnailToolbarImage: null,
     thumbnailToolbarAlbum: null,
 
     // THUMBNAIL HOVER ANIMATION
-    thumbnailHoverEffect2: 'label_font-size_1em_1.5em|title_backgroundColor_rgba(255, 255, 255, 0)_rgba(255,255,255,0)|title_color_#aaa_#fff|image_scale_1.00_1.10_5000|image_rotateZ_0deg_4deg_5000',
+    thumbnailHoverEffect2: 'label_font-size_0.7em_1em|title_backgroundColor_rgba(0, 0, 0, 0.425)_rgba(255, 255, 255, 0.425)|title_color_#fff_#000|image_scale_1.00_1.10_5000|image_rotateZ_0deg_4deg_5000',
     touchAnimation: true,
     touchAutoOpenDelay: 800,
 
@@ -74,11 +68,16 @@ jQuery(document).ready(function () {
 
     // ### gallery content ### 
     items: [
-      { src: 'ProfileImage.png', srct: 'ProfileImage.png', title: 'Favicon' },
-      { src: 'ConnectBG.gif', srct: 'ConnectBG.gif', title: 'ConnectBG' },
-      { src: 'github.webp', srct: 'github.webp', title: 'GitHub logo' },
-      { src: 'TimelineTitle.png', srct: 'TimelineTitle.png', title: 'TitleTexture' }
-
+      { src: 'FaeqFaisal-mimo-certificates-make_a_website.png', srct: 'FaeqFaisal-mimo-certificates-make_a_website.png', title: 'Mimo - Make a website' },
+      { src: 'FaeqFaisal-mimo-certificates-web_development.png', srct: 'FaeqFaisal-mimo-certificates-web_development.png', title: 'Mimo - Web Development' },
+      { src: 'FaeqFaisal-mimo-certificates-become_a_hacker.png', srct: 'FaeqFaisal-mimo-certificates-become_a_hacker.png', title: 'Mimo - become a hacker' },
+      { src: 'FaeqFaisal-Cisco-Work_Experience.png', srct: 'FaeqFaisal-Cisco-Work_Experience.png', title: 'Cisco Work Experience' },
+      { src: 'FaeqFaisal-RI-Masterclasses.png', srct: 'FaeqFaisal-RI-Masterclasses.png', title: 'Royal Institution Masterclasses' },
+      { src: 'FaeqFaisal-Siemens-work_experience.png', srct: 'FaeqFaisal-Siemens-work_experience.png', title: 'Siemens Work Experience' },
+      { src: 'FaeqFaisal-YP-careers_in_technology.png', srct: 'FaeqFaisal-YP-careers_in_technology.png', title: 'Careers in Technology' },
+      { src: 'FaeqFaisal-YP-science,_engineering_&_IT_work_experience.png', srct: 'FaeqFaisal-YP-science,_engineering_&_IT_work_experience.png', title: 'Science, Engineering & IT Work Experience' },
+      { src: 'FaeqFaisal-YP-tech_the_future_insight_evening.png', srct: 'FaeqFaisal-YP-tech_the_future_insight_evening.png', title: 'Tech the Future Insight Evening' },
+      { src: 'FaeqFaisal-YP-tech_the_future_work_experience.png', srct: 'FaeqFaisal-YP-tech_the_future_work_experience.png', title: 'Tech the Future Work Experience' }
     ]
   });
 });

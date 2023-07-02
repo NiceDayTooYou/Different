@@ -89,3 +89,21 @@ aside {
 .title.nGEvent {
   color: black !important;
 }
+
+.nGY2NavigationbarItem.nGY2NavPagination {
+  background-color: #2c2c2cd5 !important;
+}
+
+#CertificationsGallery {
+  height: calc(100% - 300px);
+  width: 100%;
+}
+
+.nGY2paginationRectangleCurrentPage,
+.nGY2paginationRectangle {
+  border-radius: 15px;
+}
+
+.nGY2GThumbnailTitle {
+  border-radius: 15px !important;
+}
