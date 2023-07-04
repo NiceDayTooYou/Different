@@ -39,7 +39,12 @@ footer {
   margin-top: 10px;
 }
 
-/*Modified from https://uiverse.io/StealthWorm/spotty-horse-48
+svg:hover {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.3));
+}
+
+/*The below was modified from https://uiverse.io/StealthWorm/spotty-horse-48
 original creator Copyright - 2023 StealthWorm (thierry) - MIT License*/
 
 .SocialBtn {
