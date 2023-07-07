@@ -46,7 +46,7 @@ aside {
     margin-left: 0;
     position: relative;
     background-color: transparent;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .content {

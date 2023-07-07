@@ -27,6 +27,12 @@ img {
   color: rgb(84, 89, 95);
 }
 
+@media(max-width: 661px) {
+  .ag-timeline_tagline {
+    font-size: large;
+  }
+}
+
 .ag-timeline_title {
   background-image: url(../Resources/TimelineTitle.png);
   background-repeat: no-repeat;
@@ -340,7 +346,7 @@ img {
 
 @media only screen and (max-width: 639px) {
   .ag-timeline_title {
-    font-size: 60px;
+    font-size: 14vw;
   }
 
   .ag-timeline-card_info {

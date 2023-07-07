@@ -30,6 +30,38 @@ footer {
   transition: transform .5s, opacity .5s;
 }
 
+.ConnectTagline {
+  color: #f2f4f8 !important;
+  margin-top: 30px;
+}
+
+.ConnectTitle {
+  font-size: 11vw;
+  background-image: none;
+  color: #f2f4f8 !important;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media(max-width: 661px) {
+  footer {
+    width: 95vw;
+  }
+
+  .ContactCard {
+    height: 20vh;
+  }
+
+  .ConnectTagline {
+    margin-top: 0;
+    font-size: medium !important;
+  }
+
+  .ConnectTitle {
+    font-size: xx-large !important;
+  }
+}
+
 .SButtons {
   display: inline-flex;
 }
@@ -37,6 +69,30 @@ footer {
 .SocialLink {
   margin: 0 auto;
   margin-top: 10px;
+}
+
+@media(max-width: 661px) {
+  .ag-timeline_title-box.ConnectTitleBox {
+    padding: 0;
+  }
+
+  .SocialLink {
+    margin-top: 0;
+  }
+
+  .SocialBtn {
+    height: fit-content !important;
+    margin-top: 20px;
+  }
+
+  a.SocialLink strong svg {
+    height: 48px;
+    width: 48px;
+  }
+
+  a.SocialLink {
+    margin: 0 2.5vw;
+  }
 }
 
 svg:hover {

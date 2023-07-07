@@ -1,5 +1,5 @@
 #About {
-  height: 90vh;
+  /*height 90 vh*/
   width: 100vw;
   margin-bottom: 10vh;
 }
@@ -7,4 +7,10 @@
 .aboutCard {
   min-height: 50vh;
   height: fit-content;
+}
+
+@media(max-width: 661px) {
+  .card.aboutCard {
+    margin: 0 auto;
+  }
 }
