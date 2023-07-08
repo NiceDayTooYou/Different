@@ -36,7 +36,7 @@ footer {
 }
 
 .ConnectTitle {
-  font-size: 11vw;
+  font-size: 11vw !important;
   background-image: none;
   color: #f2f4f8 !important;
   font-weight: bolder;
@@ -71,10 +71,11 @@ footer {
   margin-top: 10px;
 }
 
+.ag-timeline_title-box.ConnectTitleBox {
+  padding: 0;
+}
+
 @media(max-width: 661px) {
-  .ag-timeline_title-box.ConnectTitleBox {
-    padding: 0;
-  }
 
   .SocialLink {
     margin-top: 0;
