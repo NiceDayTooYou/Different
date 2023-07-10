@@ -98,9 +98,10 @@ header.sticky {
 }
 
 @media (max-width: 661px) {
+  /*
   .connectButton {
     display: none;
-  }
+  }*/
 
   nav {
     display: block;

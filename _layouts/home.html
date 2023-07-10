@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow+Condensed:400,400i,700,700i"
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../styles/Main.css">
   <link rel="stylesheet" href="../styles/About.css">
   <link rel="stylesheet" href="../styles/Portfolio.css">
@@ -30,6 +31,7 @@
   <link rel="stylesheet" href="../styles/gradButtons.css">
   <link rel="stylesheet" href="../styles/timeline.css">
   <link rel="stylesheet" href="../styles/quotes.css">
+  <link rel="stylesheet" href="../styles/DarkTheme.css">
 </head>
 
 <body>
@@ -61,7 +63,18 @@
           </a></li>
         <li class="right-li headerLink connectButton">
           <a href="#bottom">
-            <button class="button-64" role="button"><span class="text">Let's connect</span></button>
+            <svg viewBox="0 0 700 300">
+              <!-- Symbol-->
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="50%" dy="0em">Let's Connect</text>
+              </symbol>
+              <!-- Duplicate symbols-->
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -903,6 +916,18 @@
 
   </footer>
 
+  <div id="themeDiv">
+    <div class="btn-container">
+      <i class="fa fa-sun-o" aria-hidden="true"></i>
+      <label class="switch btn-color-mode-switch">
+        <input type="checkbox" name="color_mode" id="color_mode" value="1">
+        <label for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+      </label>
+      <i class="fa fa-moon-o" aria-hidden="true"></i>
+
+    </div>
+  </div>
+
   <div id="bottom">
     <p style="color: transparent;">.</p>
   </div>
@@ -915,6 +940,7 @@
   <script src="../scripts/header.js"></script>
   <script src="../scripts/timeline.js"></script>
   <script src="../scripts/ScrollFade.js"></script>
+  <script src="../scripts/theme.js"></script>
 
 </body>
 
