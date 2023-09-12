@@ -81,3 +81,42 @@ jQuery(document).ready(function () {
     ]
   });
 });
+
+
+
+
+
+// new grid:
+var $window = $('.modal-window');
+var $overlay = $('.modal-overlay');
+function fades() {
+  if ($window.hasClass('fadeIn')) {
+
+  } else {
+
+  }
+}
+
+images = document.getElementsByClassName("modal-launcher");
+function exitImageView() {
+  for (i in images) {
+    images[i].checked = false;
+    console.log(images[i]);
+  }
+  $('header').css('display', 'block');
+  $window.removeClass('fadeIn');
+  $overlay.removeClass('fadeIn');
+  $window.addClass('fadeOut');
+  $overlay.addClass('fadeOut');
+}
+
+$($window).click(exitImageView);
+$($overlay).click(exitImageView);
+
+$('.modal-launcher').click(function () {
+  $('header').css('display', 'none');
+  $window.removeClass('fadeOut');
+  $overlay.removeClass('fadeOut');
+  $window.addClass('fadeIn');
+  $overlay.addClass('fadeIn');
+})

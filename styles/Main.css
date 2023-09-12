@@ -60,6 +60,13 @@ body {
   z-index: 9999999999999999999999999999999999999999999999999;
 }
 
+#HomeScrollImg {
+  position: absolute;
+  top: 90vh;
+  width: 3vw;
+  left: 50vw;
+}
+
 .hideme {
   opacity: 0;
   transform: translateY(-20vh);
