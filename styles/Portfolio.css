@@ -177,6 +177,16 @@ aside {
   grid-auto-flow: dense;
 }
 
+@media(max-width: 661px) {
+  .grid-container {
+    grid-template-rows: repeat(10, 42vw);
+  }
+
+  #PortfolioGrid {
+    height: 77% !important;
+  }
+}
+
 @media (min-width: 600px) {
   .wide {
     grid-column: span 2;
