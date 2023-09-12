@@ -1,4 +1,4 @@
-function addEvent(obj, evType, fn) {
+/*function addEvent(obj, evType, fn) {
   if (obj.addEventListener) {
     obj.addEventListener(evType, fn, false);
     return true;
@@ -84,26 +84,19 @@ jQuery(document).ready(function () {
 
 
 
-
+*/
 
 // new grid:
+
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
 var $window = $('.modal-window');
 var $overlay = $('.modal-overlay');
-function fades() {
-  if ($window.hasClass('fadeIn')) {
-
-  } else {
-
-  }
-}
 
 images = document.getElementsByClassName("modal-launcher");
 function exitImageView() {
-  for (i in images) {
-    images[i].checked = false;
-    console.log(images[i]);
-  }
-  $('header').css('display', 'block');
+  for (i in images) images[i].checked = false;
+  if (vw > 660) $('header').css('display', 'block');
   $window.removeClass('fadeIn');
   $overlay.removeClass('fadeIn');
   $window.addClass('fadeOut');
@@ -114,7 +107,7 @@ $($window).click(exitImageView);
 $($overlay).click(exitImageView);
 
 $('.modal-launcher').click(function () {
-  $('header').css('display', 'none');
+  if (vw > 660) $('header').css('display', 'none');
   $window.removeClass('fadeOut');
   $overlay.removeClass('fadeOut');
   $window.addClass('fadeIn');
