@@ -1,6 +1,5 @@
 var typed = new Typed(".auto-type", {
   strings: [
-    "<span style=\"color: black;\">This site is currently under development</span>",
     `public class ListNode{<br/>
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;private string payload;<br>
@@ -57,6 +56,29 @@ var typed = new Typed(".auto-type", {
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
     &nbsp;&nbsp;&nbsp;&nbsp;}<br>
     }<br>
+    `, `
+    // traversal using pointers in 2D array<br>
+    #include &lt;stdio.h&gt;<br>
+    <br>
+    void traverseArr(int* arr, int N, int M) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;int i, j;<br>
+<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;for (i = 0; i < N; i++) {<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (j = 0; j < M; j++) {<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d ", *((arr + i * M) + j));<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("\n");<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    }<br>
+<br>
+<br>
+    int main() {<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;int N = 3, M = 2;<br>
+<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;int arr[][2] = { { 1, 2 }, { 3, 4 }, { 5, 6 } };<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;traverseArr((int*)arr, N, M);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+    }
     `
   ],
   startDelay: 500,
